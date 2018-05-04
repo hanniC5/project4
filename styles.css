@@ -3,3 +3,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+	background-color: skyblue;
+}
+
+h1{
+	color: rebeccapurple;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+	font-family: cursive;
+	color: indianred
+}
