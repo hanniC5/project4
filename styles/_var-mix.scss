@@ -1,0 +1,60 @@
+/* =========================================
+VARIABLES & MIXINS
+============================================ */
+
+
+/* ------------  COLORS  ------------ */
+
+
+/* HSL */
+// $accent: hsla(0%, 64%, 40%, 1);
+// $color2: hsla(90%, 14%, 97%, 1);
+// $color3: hsla(203%, 7%, 24%, 1);
+// $color4: hsla(210%, 78%, 86%, 1);
+// $color5: hsla(203%, 90%, 19%, 1);
+
+/* RGB */
+$accent: rgba(168, 37, 37, 1);
+$light-shade: rgba(248, 249, 247, 1);
+$dark-shade: rgba(57, 62, 65, 1);
+$lightblue: rgba(191, 219, 247, 1);
+$darkblue: rgba(5, 60, 94, 1);
+
+
+
+/* ------------  RESPONSIVE MIXINS  ------------ */
+
+
+// Breakpoints 
+
+$sm: 600px;
+$med: 800px;
+$lg: 960px;
+$xl: 1200px;
+
+
+// Media Queries
+
+@mixin mq($break){
+    @if $break == 'sm'{
+		@media(max-width: $sm){
+		@content;
+			}
+  } 
+    @else if $break == 'med'{
+		@media(max-width: $med){
+		@content;
+	}
+    } 
+    @else if $break == 'lg'{
+		@media(max-width: $lg){
+		@content;
+			}
+    }
+    @else if $break == 'xl'{
+		@media(max-width: $xl){
+		@content;
+			}
+		}
+}
+
