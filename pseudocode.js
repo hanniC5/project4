@@ -1,10 +1,14 @@
+// get an image URL from the user via a prompt-type popup thing.
 
-// first step, user inputs photo url into profile pic spot
-// image sent to Kairos, data sent back
 
-// data extracted by us and based on certain parameter like emotional response info,
-// certain elements on the page are updated
+// use that image URL to make an AJAX request and retrieve a JSON object
 
-// for example, high anger level would make red background
-// sadness, cursive text
+
+
+// parse that JSON object and take the emotion data and stick into some variables
+
+
+
+// use those variables to do various things and style the page depending on their values.
+
 

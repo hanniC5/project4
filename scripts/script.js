@@ -34,13 +34,6 @@ emotionApp.processImage = (picture) => {
 	});
 } 
 
-
-
-
-
-
-
-
 // INIT FUNCTION
 emotionApp.init = function(){
 
@@ -54,3 +47,20 @@ $(function(){
 emotionApp.init();
 
 }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
