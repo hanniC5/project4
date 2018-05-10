@@ -1,7 +1,7 @@
 
 const emotionApp = {};
 
-const userImage = 'http://hackeryou.com/wp-content/uploads/2014/01/2018-team-danny-patton-1-500x462.jpg';
+const userImage = 'http://hackeryou.com/wp-content/uploads/2018/03/PAM_8409-2-e1521492270518-530x462.jpg';
 
 // in this case, whatever userImage is will be passed as picture to processImage function
 
@@ -17,8 +17,6 @@ emotionApp.processImage = (picture) => {
 	const endpoint = `https://westus.api.cognitive.microsoft.com/face/v1.0/detect?`;
 
 	const fullParams = $.param(params);
-
-	console.log(endpoint + fullParams);
 
 	$.ajax({
 		url: endpoint + fullParams,
