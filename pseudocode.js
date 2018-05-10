@@ -12,3 +12,10 @@
 // use those variables to do various things and style the page depending on their values.
 
 
+
+//AGE 'Your age is'
+//GLASSES - "Glasses", "NoGlasses", "ReadingGlasses"
+//Smile - rating from 0-1
+
+
+//SAD FACE: 69%: http://www.rmmagazine.com/wp-content/uploads/2012/08/Sad-Face.png
