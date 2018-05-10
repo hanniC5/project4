@@ -2,14 +2,12 @@
 const emotionApp = {};
 
 emotionApp.emotions = {};
-
 emotionApp.attributes = {};
 
 emotionApp.userImage = '';
 emotionApp.userName = '';
 
-// in this case, whatever userImage is will be passed as picture to processImage function
-
+//function making ajax call to API to analyze the user image and give data back 
 emotionApp.processImage = (picture) => {
 	const params = {
 		"returnFaceId": "false",
@@ -28,10 +26,12 @@ emotionApp.processImage = (picture) => {
 		data: `{"url": "${picture}"}`,
 	})
 	.then( function(response){
-		// console.log(response);
 		emotionApp.getEmotions(response);
 		emotionApp.getAttributes(response);
 		console.log(emotionApp.emotions);
+	})
+	.fail( function(response){ 
+		alert("File path not recognized, please try again!");
 	});
 } 
 //function getting the data into an emotion object store in emotionApp.emotions 
@@ -57,11 +57,12 @@ emotionApp.getAttributes = function(res) {
 };
 //function that take the user inputs and gets them into global variables to be used
 emotionApp.userInputs = function() {
-	$('form').on('submit', () => {
+	$('form').on('submit', (e) => {
+		e.preventDefault();
 		emotionApp.userName = $('input[name=name]').val();
 		console.log(emotionApp.userName);
 		emotionApp.userImage = $('input[name=imagePath]').val();
-		this.processImage(emotionApp.userImage);
+		emotionApp.processImage(emotionApp.userImage);
 	});
 };
 
