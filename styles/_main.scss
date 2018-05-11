@@ -2,3 +2,112 @@
 MAIN PROFILE PAGE
 ============================================ */
 
+/* ------------  BASE STYLES  ------------ */
+
+a{
+	text-decoration: none;
+	color: inherit;
+
+}
+
+a:hover{
+	color: $accent;
+}
+
+a:visited{
+	color: inherit,
+}
+
+
+.mainScreen{
+	background: $lightblue;
+	height: 100vh;
+}
+
+.mainScreen-logo{
+	font-size: 1rem;
+	color: $darkblue;
+}
+
+
+/* ------------  USER PROFILE BOX  ------------ */
+
+.mainScreen-profile{
+	display: flex;
+	position: relative;
+}
+
+.userProfile{
+	width: 20%;
+	// height: 60vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	min-width: 276px;
+	background: $light-shade;
+	box-shadow: 5px 5px 4px $dark-shade;
+	margin-left: 15%;
+}
+
+.profilePic{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 38px auto;
+	& img{
+		width: 100%;
+	}
+}
+
+
+/* ------------  MAIN CONTENT   ------------ */
+
+.profile__content{
+	width: 50%;
+	margin-top: 100px;
+	border: 1px solid green;
+}
+
+.profile__content--header{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: 1px solid darkblue;
+	width: 100%;
+}
+
+.hi-user,
+.userName{
+	font-family: $title;
+	color: $darkblue;
+	font-size: 3rem;
+}
+
+.icons{
+	display: flex;
+	font-size: 2rem;
+	color: $darkblue;
+	margin: 15px;
+}
+
+
+.news,
+.songRec{
+	background: $light-shade;
+	border: 1px solid hotpink;
+	width: 80%;
+	margin: 20px auto;
+}
+
+
+
+
+/* ------------  FOOTER  ------------ */
+
+footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	padding: 5px;
+	background-color: $darkblue;
+	color: $light-shade;
+}

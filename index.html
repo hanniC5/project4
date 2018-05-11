@@ -10,7 +10,7 @@
 	<title>Project 4</title>
 </head>
 <body>
-	<!-- frist screen user sees -->
+	<!-- first screen user sees -->
 	<div class="signInScreen">
 		<div class="logo"></div>
 		<div class="wrapper">
@@ -32,30 +32,47 @@
 			</div>
 		</div>
 	</div>
+
+
+
 	<!-- main space screen -->
 	<div class="mainScreen">
-		<header>
-			<h1>My emotional Space</h1>
+		<header class="mainScreen-logo">
+			<h1 class="logo-text main-logo">my(emotional)space</h1>
 		</header>
-		<aside class="userProfile">
+
+<main class="mainScreen-profile">
+		<div class="userProfile">
 			<div class="profilePic">
-				<img id="profile" src="" alt="">
+				<img id="profile-img" src="" alt="My Emotional Space profile pic">
 			</div>
 			<div class="userDescription">
 				<p class="userAge"></p>
 				<p class="smileRating"></p>
 			</div>
-		</aside>
-		<section class="rightSideTop">
-			<h1>Hi <span class="userName"></span></h1>
-			<div class="logo"></div>
-			<div class="seeJson"></div>
-		</section>
-		<section class="rightSideBottom">
-			<div class="newsFeed">
+		</div>
+
+		<div class="profile__content">
+
+			<div class="profile__content--header">
+					<h1 class="hi-user">Hi <span class="userName">User!</span></h1>
+
+					<div class="icons">
+						<i class="fas fa-bars"></i>
+						<i class="far fa-bell"></i>
+					</div>
+			</div>
+
+			<div class="news">
+				<img class="news-img" src="" alt="???">
+				<div class="newsStory">
+					<h4>Recommended News Story</h3>
+				</div>
+					<a class="newsLink" href="https://www.goodnewsnetwork.org/lucky-flight-delay-leads-to-soldier-getting-to-watch-birth-of-his-daughter-as-airport-cheers/">
+						<h5 class="newsHeadline">Airport Erupts in Cheers When Lucky Flight Delay Leads to Soldier Getting to Watch Birth of His Baby</h5></a>
+					<p class="newsSource">source: Good News Network</p>
 			</div>
 			<div class="songRec">
-
 
 				<iframe src="http://8tracks.com/mixes/7510398/player_v3_universal" width="500" height="250" style="border: 0px none;"></iframe>
 				<p class="_8t_embed_p" style="font-size: 11px; line-height: 12px;">
@@ -64,11 +81,18 @@
 					<a href="http://8tracks.com?utm_medium=referral&utm_content=mix-page&utm_campaign=embed_button">8tracks Radio</a>.</p>
 
 			</div>
-		</section>
-		
-	</div>
+		</div>
 
-	<script defer src="https: //use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+		<footer>
+			<p>Built by Hannah Crump &amp; Laura-Louise Tobin, 2018</p>
+		</footer>
+</main>
+	</div>	<!-- end mainScreen -->
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+ crossorigin="anonymous"></script>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="scripts/script.js"></script>
 	
