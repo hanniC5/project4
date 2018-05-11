@@ -31,6 +31,7 @@ emotionApp.processImage = (picture) => {
 		console.log(emotionApp.emotions);
 	})
 	.fail( function(response){ 
+		console.log(response);
 		alert("File path not recognized, please try again!");
 	});
 } 
@@ -63,8 +64,25 @@ emotionApp.userInputs = function() {
 		console.log(emotionApp.userName);
 		emotionApp.userImage = $('input[name=imagePath]').val();
 		emotionApp.processImage(emotionApp.userImage);
+		emotionApp.userInfo(emotionApp.userName, emotionApp.userImage);
 	});
 };
+
+//function switching screens on submit: izmodal plugin
+
+//function putting image into div for profile pic and user name onto screen in proper HTML locations
+emotionApp.userInfo = function(name, image) {
+	$('.userName').text(name);
+	$('#userImg').attr('src',image);
+};
+//function changing user greeting font based on ___ rating
+//function changing user background based on the ___rating
+//function changing user news story based on ____rating
+//function changing user song recommendation 
+//function changing user age based on age from emotionApp.attributes object
+//function changing user smile rating based on emotionApp.attributes
+
+//generate profile function to call the above
 
 // INIT FUNCTION
 emotionApp.init = function(){
