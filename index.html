@@ -6,19 +6,22 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather+Sans:400,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="styles/styles.css">
-
 	<title>Project 4</title>
 </head>
 <body>
 	<!-- first screen user sees -->
 	<div class="signInScreen">
-		<div class="logo"></div>
 		<div class="wrapper">
-			<div class="signInBox">
-				<div class="desc">
-					<p>please sign in with a picture of yourself!</p>
+			<div class="logo">
+				<div class="logoImg">
+					<img src="" alt="">
 				</div>
+				<h1 class="logo-text">my(emotional)space</h1>
+			</div>
+			<div class="signInBox">
 				<form action="#">
+					<p>Please sign in with a picture of yourself!</p>
+					<hr>
 					<label for="name">Enter your name:</label>
 					<input type="text" name="name" id="name">
 					<label for="image">Enter your profile picture URL here:</label>
@@ -27,8 +30,11 @@
 				</form>
 			</div>
 			<div class="description">
-				<h2>My emotional space</h2>
-				<p>PROJECT DESCRIPTION Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet officiis soluta labore, ut neque eius error nemo ea inventore, veniam at mollitia aspernatur obcaecati maxime rerum animi sit nobis!</p>
+				<h2>Welcome to <span class="logo-text">my(emotional)space</span></h2>
+				<h4>Experience your mood online!</h4>
+				<p>When you upload a profile photo of yourself, a facial recognition API analyzes it for emotional expressions and other features that are used to customize your profile display!</p>
+				<p>Don't hide your emotions here - happy or sad, <span class="inline">my(emotional)space</span> will make sure your online experience initimately reflects
+				YOU! Enjoy!</p>
 			</div>
 		</div>
 	</div>
