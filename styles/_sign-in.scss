@@ -3,36 +3,40 @@ SIGN-IN MODAL
 ============================================ */
 
 .signInScreen {
-	display:none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
-    background-image: url(../assets/formbackground.png);
+    background: transparent;
     color: $dark-shade;
     padding: 20px 5px;
-    border: 1px solid red;
-    .wrapper {
-        width: 60%;
-        margin: 0 auto;
-        border-radius: 3px;
-        padding: 15px;
-        background: linear-gradient(to bottom, $darkblue, $lightblue);
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 2px 2px 2px 2px lightgrey;
-        .logo {
-            border: 1px solid orange;
-            width: 100%;
-            padding: 10px;
-            color: $light-shade;
-            display: flex;
-            flex-flow: row wrap;
-            h1 {
-                display: block;
-                font-family: $logo;
-                font-size: calc(1rem + 0.5vw);
-            }
-        }
+    z-index: 999;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 3px;
+    padding: 15px;
+    background: linear-gradient(to bottom, $darkblue, $lightblue);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px darkgray;
+}
+.logo {
+    border: 1px solid orange;
+    width: 100%;
+    padding: 10px;
+    color: $light-shade;
+    display: flex;
+    flex-flow: row wrap;
+    h1 {
+        display: block;
+        font-family: $logo;
+        font-size: calc(1rem + 0.5vw);
     }
 }
 //in wrapper 
@@ -120,6 +124,7 @@ SIGN-IN MODAL
     }
     p {
         font-size: calc(1rem + 0.2vw);
+        color: $light-shade;
         margin: 0;
         .inline {
             font-size: calc(1rem + 0.4vw);

@@ -28,7 +28,7 @@ emotionApp.processImage = (picture) => {
 	.then( function(response){
 		emotionApp.getEmotions(response);
 		emotionApp.getAttributes(response);
-		console.log(emotionApp.emotions);
+		// console.log(emotionApp.emotions);
 	})
 	.fail( function(response){ 
 		console.log(response);
@@ -56,6 +56,7 @@ emotionApp.getAttributes = function(res) {
 	}
 	console.log(emotionApp.attributes);
 };
+
 //function that take the user inputs and gets them into global variables to be used
 emotionApp.userInputs = function() {
 	$('form').on('submit', (e) => {
@@ -65,21 +66,35 @@ emotionApp.userInputs = function() {
 		emotionApp.userImage = $('input[name=imagePath]').val();
 		emotionApp.processImage(emotionApp.userImage);
 		emotionApp.userInfo(emotionApp.userName, emotionApp.userImage);
+		$('.wrapper').fadeOut();
 	});
 };
-
-//function switching screens on submit: izmodal plugin
 
 //function putting image into div for profile pic and user name onto screen in proper HTML locations
 emotionApp.userInfo = function(name, image) {
 	$('.userName').text(name);
 	$('#userImg').attr('src',image);
 };
+
 //function changing user greeting font based on ___ rating
+emotionApp.setFont = function (emotions) {
+
+};
 //function changing user background based on the ___rating
+emotionApp.setBackground = function(emotions) {
+
+};
 //function changing user news story based on ____rating
+emotionApp.setNews =function(emotions) {
+
+};
 //function changing user song recommendation 
+emotionApp.setSong = function(emotions) {
+
+};
 //function changing user age based on age from emotionApp.attributes object
+emotionApp.setAge = function() {
+};
 //function changing user smile rating based on emotionApp.attributes
 
 //generate profile function to call the above
