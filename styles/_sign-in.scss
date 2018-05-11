@@ -3,6 +3,7 @@ SIGN-IN MODAL
 ============================================ */
 
 .signInScreen {
+	display:none;
     height: 100vh;
     background-image: url(../assets/formbackground.png);
     color: $dark-shade;
