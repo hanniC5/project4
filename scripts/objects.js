@@ -1,27 +1,56 @@
 const playlists = {
 	anger : `<iframe src="http://8tracks.com/mixes/908129/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
-
-	sadness: 'https://8tracks.com/book-em-spacemonkey/almost-blue',
-	happiness: 'https://8tracks.com/kateandlate/be-happy',
-	contempt: 'https://8tracks.com/britania/if-i-had-a-heart',
-	fear: 'https://8tracks.com/clizzy/b-r-e-a-t-h-e',
-	surprise: 'https://8tracks.com/cooldudedevon/some-faves',
-	neutral: 'https://8tracks.com/yokv/chill-party-vibes-2018#smart_id#play',
+	sadness: `<iframe src="http://8tracks.com/mixes/8718926/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	happiness: `<iframe src="http://8tracks.com/mixes/6986172/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	contempt: `<iframe src="http://8tracks.com/mixes/582110/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	fear: `<iframe src="http://8tracks.com/mixes/7000418/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	surprise: `<iframe src="http://8tracks.com/mixes/8421460/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	neutral: `<iframe src="http://8tracks.com/mixes/8785729/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`
 }
 
 const newsItems = {
 	anger: {
+		headline: 'Angry Birds App Helps Protect Real-Life Eggs of Endangered Species',
+		url: 'https://www.goodnewsnetwork.org/angry-birds-french-polynesia-052015/',
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjpaDoU3W1yGsceL0i54qV0f2VRkmMcx0TZilrWJjrxVNhbUF_',
+		source: 'source: Good News Network'
+	},
+	sadness: {
 		headline: 'Airport Erupts in Cheers When Lucky Flight Delay Leads to Soldier Getting to Watch Birth of His Baby',
 		url: 'https://www.goodnewsnetwork.org/lucky-flight-delay-leads-to-soldier-getting-to-watch-birth-of-his-daughter-as-airport-cheers/',
-		photo : '????',
-		source: `source: Good News Network`
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17n3fateLHfjjm34rcg-WT8Fx6guRKt76MM5GfakM6BTD7Vi-7Q',
+		source: 'source: Good News Network'
 	},
-	sadness: '?',
-	happiness: '?',
-	contempt: '?',
-	fear: '?',
-	surprise: '?',
-	neutral: '?',
+	happiness: {
+		headline: 'Devoted Dog Waits at Train Station Every Day For 12 Hours So He Can Excitedly Greet His Owner',
+		url: 'https://www.goodnewsnetwork.org/devoted-dog-waits-at-train-station-every-day-for-12-hours-so-he-can-excitedly-greet-his-owner/',
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeaeGue0HlHLYRj5wYeUdYO1_geor9C3EvRh-nRzell6MbifcKrg',
+		source: 'source: Good News Network'
+	},
+	contempt: {
+		headline:'Japanese Bus Drivers Strike by Continuing to Run and Refusing to Take Anyone’s Money',
+		url: 'https://www.goodnewsnetwork.org/japanese-bus-drivers-strike-by-continuing-to-run-and-refusing-to-take-anyones-money/', 
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKudzEtJ9dQSIApemCjwTMnqjV161mxUJ5XuT8enFbNb2297eFg',
+		source: 'source: Good News Network'
+	},
+	fear: {
+		headline: 'Orphan Elephant Conquers His Fear of Water With Help From His Loving Human',
+		url: 'https://www.goodnewsnetwork.org/watch-orphan-elephant-conquer-his-fear-of-water-with-the-help-of-his-loving-human/',
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxMYl7DajfkXfEjSaErc8ps--fLR2IRWgtWkOlQTquRBamj7k',
+		source: 'source: Good News Network'
+	},
+	surprise: {
+		headline: 'Woman Surprised to Find Her Dog Comforting a Grieving Stranger in the Airport',
+		url: 'https://www.goodnewsnetwork.org/woman-surprised-find-dog-comforting-grieving-stranger-airport/',
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_k-SkxoR_t6XbmD7yUAYaSL1bdCpvsuCwcsbjbafGZnjQ9sfxyA',
+		source: 'source: Good News Network'
+	},
+	neutral: {
+		headline: 'Canada Rules to Uphold Net Neutrality',
+		url: 'https://www.goodnewsnetwork.org/canada-rules-uphold-net-neutrality/',
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zBkkRSHuaswJ6i0HUMBmBol29QObccKLTvAxJM3e8k6iRHYW2A',
+		source: 'source: Good News Network'
+	}
 }
 
 
