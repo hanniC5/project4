@@ -26,22 +26,22 @@ const newsItems = {
 
 
 const bgLight = {
-	anger : '?',
-	sadness : '?',
-	happiness : '?',
-	contempt : '?',
-	fear : '?',
-	surprise : '?',
-	neutral : '?',
+	anger: '#bd3328',
+	sadness: '#192550',
+	happiness: '#108a98',
+	contempt: '#949810',
+	fear: '#240404', 
+	surprise: '#15651c',
+	neutral: '#9ea46d',
 }
 
 const bgDark ={
-	anger : '?',
-	sadness : '?',
-	happiness : '?',
-	contempt : '?',
-	fear : '?',
-	surprise : '?',
-	neutral : '?',
+	anger: '#f00e2e',
+	sadness: '#0e88f0',
+	happiness: '#f081cb',
+	contempt: '#dad23d',
+	fear: '#9e1a28',
+	surprise: '#7ce67a',
+	neutral: '#efd99d',
 }
 

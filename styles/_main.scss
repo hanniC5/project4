@@ -41,17 +41,14 @@ body{
 }
 
 .bg-dark{
-  background-color: rgb(240, 14, 46);
+  background-color: #a7bdcc;
   mix-blend-mode: darken;
-
 }
 
-.bg-light {
-  background-color: rgb(25, 37, 80);
+.bg-light{
+  background: #083e5f;
   mix-blend-mode: lighten;
-
 }
-
 
 .mainScreen-logo{
 	padding: 10px;
@@ -85,8 +82,7 @@ body{
 	margin: 38px auto;
 	overflow: hidden;
 	& img{
-		width: 100%;
-		object-fit: cover;
+		object-fit: fill;
 	}
 }
 
