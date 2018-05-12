@@ -6,6 +6,8 @@ emotionApp.attributes = {};
 
 emotionApp.userImage = '';
 emotionApp.userName = '';
+emotionApp.highestEmotion = '';
+emotionApp.secHighestEmotion = '';
 
 //function making ajax call to API to analyze the user image and give data back 
 emotionApp.processImage = (picture) => {
@@ -27,8 +29,7 @@ emotionApp.processImage = (picture) => {
 	})
 	.then( function(response){
 		emotionApp.getEmotions(response);
-		emotionApp.getAttributes(response);
-		// console.log(emotionApp.emotions);
+
 	})
 	.fail( function(response){ 
 		console.log(response);
@@ -40,10 +41,28 @@ emotionApp.getEmotions = function(res) {
 	const face = res[0];
 	const emotions = face.faceAttributes.emotion;
 	emotionApp.emotions = Object.assign(emotions);
+	emotionApp.rankEmotions();
+	emotionApp.setSong(emotionApp.highestEmotion);
 };
+
+emotionApp.rankEmotions = function(){
+		const sortable = [];
+			for(emotion in emotionApp.emotions){
+				sortable.push([emotion,emotionApp.emotions[emotion]])
+			}
+		const highestToLowest = sortable.sort( (arr1, arr2) => {
+			return arr1[1] < arr2[1];
+		}  )
+		const highEmo = highestToLowest[0];
+		const secHighEmo = highestToLowest[1];
+		emotionApp.highestEmotion = highEmo[0];
+		emotionApp.secHighestEmotion = secHighEmo[0];
+}
+
+
 //function getting attribute data and putting into attribute object 
 emotionApp.getAttributes = function(res) {
-	const face= res[0];
+	const face = res[0];
 	const {age, smile, glasses} = face.faceAttributes;
 	const {yaw} = face.faceAttributes.headPose;
 	emotionApp.attributes.age = age;
@@ -72,6 +91,7 @@ emotionApp.userInputs = function() {
 	});
 };
 
+
 //function putting image into div for profile pic and user name onto screen in proper HTML locations
 emotionApp.userInfo = function(name, image) {
 	$('.userName').text(name);
@@ -93,7 +113,13 @@ emotionApp.setNews =function(emotions) {
 //function changing user song recommendation 
 emotionApp.setSong = function(emotions) {
 
+const songRef = emotions;
+console.log(songRef)
+$('.songRec').html();
+
+
 };
+
 //function changing user age based on age from emotionApp.attributes object
 emotionApp.setAge = function() {
 	$('.age').text(emotionApp.attributes.age);
@@ -105,11 +131,15 @@ emotionApp.setSmile = function() {
 	$('.smile').text(smileRating);
 };
 
+
+
 //generate profile function to call the above
 
 // INIT FUNCTION
 emotionApp.init = function(){
+	// userInputs runs on submit
 	emotionApp.userInputs();
+
 }
 
 // DOCUMENT READY
