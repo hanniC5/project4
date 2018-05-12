@@ -28,37 +28,29 @@ body{
 	background-repeat: no-repeat;
 	background-position: 50% 0%;
 	height: 100vh;
-// 	position: absolute;
-// 	z-index: 1;
+	position: relative;
 }
 
+.bg{
+  display: block;
+  width: 100vw;
+	height: 100vh;
+	top: 0;
+  left: 0;
+	position: absolute;
+}
 
+.bg-dark{
+  background-color: rgb(240, 14, 46);
+  mix-blend-mode: darken;
 
-// #mainScreen::before {
-//   background-color: rgb(240, 14, 46);
-//   content: '';
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   mix-blend-mode: darken;
-// 	position: absolute;
-// 	z-index: 2;
-//   top: 0;
-//   left: 0;
-// }
+}
 
-// #mainScreen::after {
-//   background-color: rgb(25, 37, 80);
-//   content: '';
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   mix-blend-mode: lighten;
-// 	position: absolute;
-// 	z-index: 4;
-//   top: 0;
-//   left: 0;
-// }
+.bg-light {
+  background-color: rgb(25, 37, 80);
+  mix-blend-mode: lighten;
+
+}
 
 
 .mainScreen-logo{

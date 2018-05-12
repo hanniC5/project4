@@ -20,3 +20,25 @@ $paragraph:'Lato', sans-serif;
 
 /* ------------  MAIN PROFILE PAGE  ------------ */
 
+.news{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.news-img{
+	margin: 10px;
+}
+
+.newsStory{
+	margin-left: 20px;
+	font-family: $paragraph;
+	h4{
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		margin: 10px 0;
+	}
+}
+
+.newsHeadline{
+	font-size: 1.6rem;
+	margin: 0;
+}
