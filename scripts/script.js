@@ -55,6 +55,8 @@ emotionApp.getAttributes = function(res) {
 		emotionApp.attributes.glasses = true;
 	}
 	console.log(emotionApp.attributes);
+	emotionApp.setAge();
+	emotionApp.setSmile();
 };
 
 //function that take the user inputs and gets them into global variables to be used
@@ -94,8 +96,14 @@ emotionApp.setSong = function(emotions) {
 };
 //function changing user age based on age from emotionApp.attributes object
 emotionApp.setAge = function() {
+	$('.age').text(emotionApp.attributes.age);
 };
 //function changing user smile rating based on emotionApp.attributes
+emotionApp.setSmile = function() {
+	let smileRating = Math.round(emotionApp.attributes.smile * 100);
+	console.log(smileRating);
+	$('.smile').text(smileRating);
+};
 
 //generate profile function to call the above
 
