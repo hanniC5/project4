@@ -44,6 +44,7 @@ emotionApp.getEmotions = function(res) {
 	emotionApp.rankEmotions();
 	emotionApp.setSong(emotionApp.highestEmotion);
 	emotionApp.setNews(emotionApp.highestEmotion);
+	emotionApp.setBackground(emotionApp.highestEmotion, emotionApp.secHighestEmotion);
 };
 
 //function getting attribute data and putting into attribute object 
@@ -99,7 +100,13 @@ emotionApp.userInfo = function(name, image) {
 
 
 //function changing user background based on the emotion rating
-emotionApp.setBackground = function(emotions) {
+emotionApp.setBackground = function(emotion1, emotion2) {
+	const highest = emotion1;
+	const secHighest = emotion2;
+
+	$('.bg-light').css('background', bgLight[highest]) ;
+	$('.bg-dark').css('background', bgDark[secHighest]) ;
+
 
 };
 //function changing user news story based on emotion rating
