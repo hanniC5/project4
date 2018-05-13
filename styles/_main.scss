@@ -7,7 +7,6 @@ MAIN PROFILE PAGE
 a{
 	text-decoration: none;
 	color: inherit;
-
 }
 
 a:hover{
@@ -32,11 +31,11 @@ body{
 }
 
 .bg{
-  display: block;
-  width: 100%;
+  	display: block;
+  	width: 100%;
 	height: 100%;
 	top: 0;
-  left: 0;
+  	left: 0;
 	position: absolute;
 }
 
@@ -61,11 +60,21 @@ body{
 }
 
 .mainScreen-logo{
+	width: fit-content;
+	width: -moz-fit-content;
+	margin: 10px;
 	padding: 10px;
 	font-size: 1rem;
 	color: $darkblue;
+	display: flex;
+	align-items: center;
+	//background:  rgba(248, 249, 247, 0.3);
+	//box-shadow: 0 0 10px rgba(248, 249, 247, 0.5);
+	.logoImg {
+		display: inline-block;
+		width: 40px;
+	}
 }
-
 
 /* ------------  USER PROFILE BOX  ------------ */
 
@@ -77,12 +86,16 @@ body{
 .userProfile{
 	width: 20%;
 	// height: 60vh;
-	margin-top: 10vh;
+	// margin-top: 10vh;
 	margin-bottom: 10vh;
 	min-width: 276px;
 	background: $light-shade;
+	border-radius: 10px;
 	box-shadow: 5px 5px 4px $dark-shade;
 	margin-left: 15%;
+	font-family: $logo;
+	text-align: center;
+	font-size: 1.6rem;
 }
 
 .profilePic{
@@ -103,15 +116,13 @@ body{
 
 .profile__content{
 	width: 50%;
-	margin-top: 100px;
-	border: 1px solid green;
+	margin-bottom: 10px;
 }
 
 .profile__content--header{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	border: 1px solid darkblue;
 	width: 100%;
 }
 
@@ -120,9 +131,13 @@ body{
 	font-family: $title;
 	color: $light-shade;
 	font-size: 3rem;
+	padding: 0;
+	margin: 0;
 }
 
 .icons{
+	padding: 0;
+	margin: 0;
 	display: flex;
 	color: $light-shade;
 	font-size: 2rem;
@@ -133,23 +148,32 @@ body{
 }
 
 
-
 .news,
 .songRec{
-	background: $light-shade;
-	border: 1px solid hotpink;
 	width: 80%;
 	margin: 20px auto;
+	border-radius: 10px;
 }
-
 .news-img{
-	height: 75px;
-	width: 75px;
+	height: 100px;
+	width: 100px;
 	border: 1px solid black;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
 .news{
+	background: $light-shade;
 	display:flex;
+	justify-content: center;
 	align-items: center;
+}
+.songRec {
+	iframe {
+		border-radius: 10px;
+	}
 }
 
 
@@ -157,8 +181,7 @@ body{
 
 footer{
 	width: 100%;
-	position: absolute;
-	bottom: 0px;
+	position: relative;
 	padding: 5px;
 	background-color: $darkblue;
 	color: $light-shade;

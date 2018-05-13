@@ -98,25 +98,20 @@ emotionApp.userInfo = function(name, image) {
 	$('#userImg').attr('src',image);
 };
 
-
 //function changing user background based on the emotion rating
 emotionApp.setBackground = function(emotion1, emotion2) {
 	const highest = emotion1;
 	const secHighest = emotion2;
-
 	$('.bg-light').css('background', bgLight[highest]) ;
 	$('.bg-dark').css('background', bgDark[secHighest]) ;
-
-
 };
 //function changing user news story based on emotion rating
 emotionApp.setNews =function(emotions) {
 	const newsRef = emotions;
-
 	$('.newsLink').attr('href', newsItems[newsRef].url);
 	$('.newsHeadline').text(newsItems[newsRef].headline);
-
-
+	$('.newsImg').attr('src', newsItems[newsRef].photo);
+	$('.newsSource').text(newsItems[newsRef].source);
 };
 //function changing user song recommendation 
 emotionApp.setSong = function(emotions) {
