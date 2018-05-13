@@ -3,7 +3,6 @@ SIGN-IN MODAL
 ============================================ */
 
 .signInScreen {
-    //display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +23,13 @@ SIGN-IN MODAL
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 2px 2px darkgray;
+		box-shadow: 2px 2px 2px 2px darkgray;
+		
+		@include mq(sm){
+			flex-flow: column nowrap;
+			width: 95%;
+			margin: 10px;
+		}
 }
 .logo {
     width: 100%;
@@ -45,10 +50,14 @@ SIGN-IN MODAL
 .signInBox, 
 .description {
     padding: 10px; 
-    font-family: $paragraph;
+		font-family: $paragraph;
+		width: 50%;
+		
+		@include mq(sm){
+			width: 90%;
+		}
 }
 .signInBox {
-    width: 50%;
     text-align: center;
     border-radius: 6px 0 0 6px;
     display: flex;
@@ -93,10 +102,12 @@ SIGN-IN MODAL
             border-radius: 3px;
             cursor: pointer;
         }
-    }
+		}
+		@include mq(sm){
+		order: 2;
+	}
 }
 .description {
-    width: 50%;
     border-radius: 0 6px 6px 0;
     display: flex;
     flex-flow: column nowrap;
@@ -133,5 +144,7 @@ SIGN-IN MODAL
             display: inline;
             text-shadow: 0.5px 0.5px $dark-shade;
         }
-    }
+		}
+		
+
 }

@@ -10,14 +10,6 @@ VARIABLES & MIXINS
 
 /* ------------  COLORS  ------------ */
 
-
-/* HSL */
-// $accent: hsla(0%, 64%, 40%, 1);
-// $color2: hsla(90%, 14%, 97%, 1);
-// $color3: hsla(203%, 7%, 24%, 1);
-// $color4: hsla(210%, 78%, 86%, 1);
-// $color5: hsla(203%, 90%, 19%, 1);
-
 /* RGB */
 $accent: rgba(168, 37, 37, 1);
 $light-shade: rgba(248, 249, 247, 1);
@@ -31,8 +23,8 @@ $darkblue: rgba(5, 60, 94, 1);
 
 
 // Breakpoints 
-
-$sm: 600px;
+$xs: 600px;
+$sm: 760px;
 $med: 800px;
 $lg: 960px;
 $xl: 1200px;

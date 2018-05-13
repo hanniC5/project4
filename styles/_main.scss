@@ -14,7 +14,7 @@ a:hover{
 }
 
 a:visited{
-	color: inherit,
+	color: inherit;
 }
 
 body{
@@ -26,13 +26,16 @@ body{
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: 50% 0%;
-	height: 100vh;
-	position: relative;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
 }
 
 .bg{
-  	display: block;
-  	width: 100%;
+	display: block;
+	width: 100%;
 	height: 100%;
 	top: 0;
   	left: 0;
@@ -52,11 +55,19 @@ body{
 
 .main__content{
 	position: absolute;
+	height: 100%;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right:0;
 	z-index: 5;
+
+		a{
+		color: $darkblue;
+	}
+	a:hover{
+		color: $accent;
+	}
 }
 
 .mainScreen-logo{
@@ -65,7 +76,7 @@ body{
 	margin: 10px;
 	padding: 10px;
 	font-size: 1rem;
-	color: $darkblue;
+	color: $light-shade;
 	display: flex;
 	align-items: center;
 	//background:  rgba(248, 249, 247, 0.3);
@@ -81,21 +92,30 @@ body{
 .mainScreen-profile{
 	display: flex;
 	position: relative;
+
+	@include mq(med){
+		flex-direction: column;
+		margin-left: 20px auto;
+	}
 }
 
 .userProfile{
 	width: 20%;
-	// height: 60vh;
-	// margin-top: 10vh;
 	margin-bottom: 10vh;
 	min-width: 276px;
 	background: $light-shade;
-	border-radius: 10px;
+	border-radius: 7px;
 	box-shadow: 5px 5px 4px $dark-shade;
 	margin-left: 15%;
-	font-family: $logo;
-	text-align: center;
+	font-family: $paragraph;
 	font-size: 1.6rem;
+
+	@include mq(med){
+		margin: 0 auto;
+		width: 90%;
+		display:flex
+	}
+
 }
 
 .profilePic{
@@ -109,14 +129,44 @@ body{
 		height: 100%;
 		object-fit: cover;
 	}
+
+	@include mq(sm){
+		width: 150px;
+		height: 150px;
+	}
 }
 
+.userDescription{
+	margin: 0 auto;
+	padding: 0 50px;
+
+	@include mq(med){
+		margin-top: 50px;
+	}
+}
 
 /* ------------  MAIN CONTENT   ------------ */
 
 .profile__content{
 	width: 50%;
 	margin-bottom: 10px;
+
+	@include mq(med){
+		width: 90%;
+		margin: 15px auto;
+	}
+}
+
+.about{
+	font-family: $paragraph;
+	font-size: 1.4rem;
+	padding: 20px;
+	background: $light-shade;
+		display: block;
+}
+
+.about-visible{
+	display: block;
 }
 
 .profile__content--header{
@@ -147,13 +197,16 @@ body{
 	}
 }
 
-
 .news,
-.songRec{
+.songRec,
+.about{
 	width: 80%;
 	margin: 20px auto;
-	border-radius: 10px;
+	border-radius: 7px;
+	box-shadow: 5px 5px 4px $dark-shade;
+	
 }
+
 .news-img{
 	height: 100px;
 	width: 100px;
@@ -167,8 +220,8 @@ body{
 .news{
 	background: $light-shade;
 	display:flex;
-	justify-content: center;
 	align-items: center;
+	padding: 10px;
 }
 .songRec {
 	iframe {
@@ -181,8 +234,10 @@ body{
 
 footer{
 	width: 100%;
-	position: relative;
+	position: absolute;
+	bottom: 0;
 	padding: 5px;
 	background-color: $darkblue;
 	color: $light-shade;
+	font-family: $paragraph;
 }
