@@ -34,9 +34,7 @@
 			<div class="description">
 				<h2>Welcome to <span class="logo-text">my(emotional)space</span></h2>
 				<h4>Experience your mood online!</h4>
-				<p>When you upload a profile photo of yourself, a facial recognition API analyzes it for emotional expressions and other features that are used to customize your profile display!</p>
-				<p>Don't hide your emotions here - happy or sad, <span class="inline">my(emotional)space</span> will make sure your online experience initimately reflects
-				YOU! Enjoy!</p>
+				<p><span class="inline">my(emotional)space</span> uses facial recognition software to give the user a dynamic empathy-based user experience! Sign in by uploading a photo, and your profile appearance will be customized according to your mood!</p>
 			</div>
 		</div>
 	</div>
@@ -61,6 +59,7 @@
 					<img id="userImg" src="" alt="My Emotional Space profile pic">
 				</div>
 				<div class="userDescription">
+					<p class="userName"></p>
 					<p class="userAge">Age: <span class="age"></span></p>
 					<p class="smileRating">Today's smile rating: <span class="smile"></span></p>
 				</div>
@@ -68,34 +67,41 @@
 
 			<div class="profile__content">
 				<div class="profile__content--header">
-						<h1 class="hi-user">Hi <span class="userName">User!</span></h1>
+						<h1 class="hi-user">Hi <span class="userName">User</span>!</h1>
 
 						<ul class="icons">
 							<li><i class="far fa-bell"></i></li>
-							<li><i class="fas fa-bars"></i></li>
+							<li><a href="#"><i class="fas fa-bars"></i></a></li>
 						</ul>
 				</div>
-				<div class="news">
-					<div class="news-img">
-						<img class="newsImg" src="" alt="">
-					</div>
-					<div class="newsStory">
-						<h4>Recommended News Story</h4>
-						<a class="newsLink" href="">
-						<h5 class="newsHeadline">News Headline</h5></a>
-						<p class="newsSource"></p>
-					</div>
+				<div class="profile__content--main">
+						<div class="about">
+							<h4>About my(emotional)space</h4>
+							<p>My(emotional)space is a prototype for an empathy-based user experience, taking the form of a sample social media profile page. Sign in with a URL of a user's photo and see the user interface change based on the user's emotional state! News stories, a song recommendation, plus dynamic background colors change to reflect the user's emotional state. </p>
+							<p>My(emotional)space is built using the <a href="https://azure.microsoft.com/en-ca/services/cognitive-services/face/">Microsoft Face API.</a> Photos URLs are sent via AJAX to Microsoft Face API, which returns a JSON object featuring level ratings of eight emotions, plus an age and "smile rating". No data about race or gender is received by my(emotiona)space!</p>
+							My(emotional)space was built by Hannah Crump and Laura-Louise Tobin as part of Hacker You's Web Development Bootcamp in 2018.
+						</div>
+						<div class="news">
+							<div class="news-img">
+								<img class="newsImg" src="" alt="">
+							</div>
+							<div class="newsStory">
+								<h4>Recommended News Story</h4>
+								<a class="newsLink" href="">
+								<h5 class="newsHeadline">News Headline</h5></a>
+								<p class="newsSource"></p>
+							</div>
+						</div>
+						<div class="songRec">
+						</div>
+
 				</div>
-				<div class="songRec"></div>
 			</div> <!-- profile content ends -->
 		</div> <!-- main screen- profile div ends -->
 		
-		<footer>
-			<p>Built by Hannah Crump &amp; Laura-Louise Tobin, 2018</p>
-		</footer>
 	</main>
 	
-	</div>	<!-- end mainScreen -->
+</div>	<!-- end mainScreen -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
