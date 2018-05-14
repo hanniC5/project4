@@ -54,6 +54,7 @@ body{
 
 
 .main__content{
+	border: 1px solid red;
 	position: absolute;
 	height: 100%;
 	top: 0;
@@ -61,8 +62,7 @@ body{
 	left: 0;
 	right:0;
 	z-index: 5;
-
-		a{
+	a{
 		color: $darkblue;
 	}
 	a:hover{
@@ -74,13 +74,13 @@ body{
 	width: fit-content;
 	width: -moz-fit-content;
 	margin: 10px;
-	padding: 10px;
+	//padding: 10px;
 	font-size: 1rem;
-	color: $light-shade;
+	color: $darkblue;
 	display: flex;
 	align-items: center;
-	//background:  rgba(248, 249, 247, 0.3);
-	//box-shadow: 0 0 10px rgba(248, 249, 247, 0.5);
+	background:  rgba(248, 249, 247, 0.3);
+	box-shadow: 0 0 10px rgba(248, 249, 247, 0.5);
 	.logoImg {
 		display: inline-block;
 		width: 40px;
