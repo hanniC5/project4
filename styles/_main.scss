@@ -54,7 +54,6 @@ body{
 
 
 .main__content{
-	border: 1px solid red;
 	position: absolute;
 	height: 100%;
 	top: 0;
@@ -110,6 +109,7 @@ body{
 	margin-left: 17%;
 	font-family: $paragraph;
 	font-size: 1.6rem;
+	color: $dark-shade;
 
 	@include mq(med){
 		margin: 0 auto;
@@ -138,8 +138,15 @@ body{
 }
 
 .userDescription{
-	margin: 0 auto;
+	margin: 10px auto 25px;
 	padding: 0 50px;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	span {
+		font-weight: bold;
+	}
 
 	@include mq(med){
 		margin-top: 50px;
@@ -159,11 +166,11 @@ body{
 }
 
 .about{
+	display:none;
 	font-family: $paragraph;
 	font-size: 1.4rem;
 	padding: 20px;
 	background: $light-shade;
-	display:none;
 	h4{
 		text-transform: uppercase;
 	}
@@ -228,6 +235,8 @@ body{
 	padding: 10px;
 }
 .songRec {
+	display: flex;
+	align-content: center;
 	iframe {
 		border-radius: 10px;
 	}
