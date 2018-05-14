@@ -61,8 +61,7 @@ body{
 	left: 0;
 	right:0;
 	z-index: 5;
-
-		a{
+	a{
 		color: $darkblue;
 	}
 	a:hover{
@@ -74,13 +73,13 @@ body{
 	width: fit-content;
 	width: -moz-fit-content;
 	margin: 10px;
-	padding: 10px;
+	//padding: 10px;
 	font-size: 1rem;
-	color: $light-shade;
+	color: $darkblue;
 	display: flex;
 	align-items: center;
-	//background:  rgba(248, 249, 247, 0.3);
-	//box-shadow: 0 0 10px rgba(248, 249, 247, 0.5);
+	background:  rgba(248, 249, 247, 0.3);
+	box-shadow: 0 0 10px rgba(248, 249, 247, 0.5);
 	.logoImg {
 		display: inline-block;
 		width: 40px;
@@ -110,6 +109,7 @@ body{
 	margin-left: 17%;
 	font-family: $paragraph;
 	font-size: 1.6rem;
+	color: $dark-shade;
 
 	@include mq(med){
 		margin: 0 auto;
@@ -138,8 +138,15 @@ body{
 }
 
 .userDescription{
-	margin: 0 auto;
+	margin: 10px auto 25px;
 	padding: 0 50px;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	span {
+		font-weight: bold;
+	}
 
 	@include mq(med){
 		margin-top: 50px;
@@ -159,11 +166,11 @@ body{
 }
 
 .about{
+	display:none;
 	font-family: $paragraph;
 	font-size: 1.4rem;
 	padding: 20px;
 	background: $light-shade;
-	display:none;
 	h4{
 		text-transform: uppercase;
 	}
@@ -228,6 +235,8 @@ body{
 	padding: 10px;
 }
 .songRec {
+	display: flex;
+	align-content: center;
 	iframe {
 		border-radius: 10px;
 	}
