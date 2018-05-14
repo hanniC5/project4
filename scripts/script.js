@@ -121,6 +121,7 @@ emotionApp.setSong = function(emotions) {
 
 //function changing user age based on age from emotionApp.attributes object
 emotionApp.setAge = function() {
+	$('.name').text(emotionApp.userName);
 	$('.age').text(emotionApp.attributes.age);
 };
 
