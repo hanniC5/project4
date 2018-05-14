@@ -70,7 +70,7 @@ const bgDark ={
 	happiness: '#f081cb',
 	contempt: '#dad23d',
 	fear: '#9e1a28',
-	surprise: '#7ce67a',
+	surprise: '#a227aa',
 	neutral: '#efd99d',
 }
 
