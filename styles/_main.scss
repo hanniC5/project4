@@ -103,10 +103,11 @@ body{
 	width: 20%;
 	margin-bottom: 10vh;
 	min-width: 276px;
+	max-height: 425px;
 	background: $light-shade;
 	border-radius: 7px;
 	box-shadow: 5px 5px 4px $dark-shade;
-	margin-left: 15%;
+	margin-left: 17%;
 	font-family: $paragraph;
 	font-size: 1.6rem;
 
@@ -162,7 +163,10 @@ body{
 	font-size: 1.4rem;
 	padding: 20px;
 	background: $light-shade;
-		display: block;
+	display:none;
+	h4{
+		text-transform: uppercase;
+	}
 }
 
 .about-visible{
