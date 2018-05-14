@@ -131,7 +131,12 @@ emotionApp.setSmile = function() {
 	$('.smile').text(smileRating);
 };
 
-
+emotionApp.toggleAbout = function (){
+	$('#toggleAbout').on('click', (e) => {
+		e.preventDefault();
+		$('.about').toggleClass('about-visible');
+	});
+}
 
 //generate profile function to call the above
 
@@ -139,6 +144,7 @@ emotionApp.setSmile = function() {
 emotionApp.init = function(){
 	// userInputs runs on submit
 	emotionApp.userInputs();
+	emotionApp.toggleAbout();
 
 }
 
