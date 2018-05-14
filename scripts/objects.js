@@ -1,11 +1,11 @@
 const playlists = {
-	anger : `<iframe src="http://8tracks.com/mixes/908129/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
-	sadness: `<iframe src="http://8tracks.com/mixes/8718926/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
-	happiness: `<iframe src="http://8tracks.com/mixes/6986172/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
-	contempt: `<iframe src="http://8tracks.com/mixes/582110/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
-	fear: `<iframe src="http://8tracks.com/mixes/7000418/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
-	surprise: `<iframe src="http://8tracks.com/mixes/8421460/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
-	neutral: `<iframe src="http://8tracks.com/mixes/8785729/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`
+	anger : `<iframe src="https://8tracks.com/mixes/908129/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	sadness: `<iframe src="https://8tracks.com/mixes/8718926/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	happiness: `<iframe src="https://8tracks.com/mixes/6986172/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	contempt: `<iframe src="https://8tracks.com/mixes/582110/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	fear: `<iframe src="https://8tracks.com/mixes/7000418/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	surprise: `<iframe src="https://8tracks.com/mixes/8421460/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`,
+	neutral: `<iframe src="https://8tracks.com/mixes/8785729/player_v3_universal" width="100%" height="100%" style="border: 0px none;"></iframe>`
 }
 
 const newsItems = {
